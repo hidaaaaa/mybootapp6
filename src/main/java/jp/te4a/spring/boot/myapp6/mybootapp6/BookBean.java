@@ -11,5 +11,4 @@ public class BookBean {
     String writter;
     String publisher;
     Integer price;
-
 }
