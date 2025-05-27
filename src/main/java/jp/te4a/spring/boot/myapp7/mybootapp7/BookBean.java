@@ -1,8 +1,8 @@
-package jp.te4a.spring.boot.myapp6.mybootapp6;
-
+package jp.te4a.spring.boot.myapp7.mybootapp7;
+ 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
+ 
 @Data
 @AllArgsConstructor
 public class BookBean {
@@ -11,5 +11,5 @@ public class BookBean {
     String writter;
     String publisher;
     Integer price;
-
 }
+ 
