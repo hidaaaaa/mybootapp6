@@ -7,11 +7,13 @@
 </head>
 
 <body>
-    <form th:action="@{/books/create}" method="post">
+    <form th:action="@{/books/create}"th:object="${bookForm}" method="post">
         <table>
             <tr>
                 <td>タイトル:</td>
-                <td><input type="text" name="title" /></td>
+                <td><input type="text" name="title" />
+                <span th:if"${#fields.hasErrors('title')}" th:errors="*{title}"></span>
+                </td>
             </tr>
             <tr>
                 <td>著者：</td>
