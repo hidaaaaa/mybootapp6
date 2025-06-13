@@ -39,7 +39,7 @@
             <td th:text="${book.publisher}">出版社Ａ</td>
             <td th:text="${book.price}">100</td>
             <td>
-                <form th:action="@{/books/create}" method="post">
+                <form th:action="@{/books/edit}" method="post">
                     <input type="submit" name="form" value="編集" />
                     <input type="hidden" name="id" th:value="${book.id}" />
                 </form>
